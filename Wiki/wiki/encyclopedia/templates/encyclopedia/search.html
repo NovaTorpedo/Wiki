@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Search Result</h1>
+
+    {% if contents %}
+        <p><a href="{% url 'converter' name=name %}">{{ name }}</a></p>
+    {% endif %}
+
+{% endblock %}
